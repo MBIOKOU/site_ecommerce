@@ -35,3 +35,4 @@ function toggleMenu() {
     menu.classList.toggle('show');
     body.classList.toggle('no-scroll');
 }
+

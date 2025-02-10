@@ -7,18 +7,21 @@
     <link rel="stylesheet" href="./games.css">
 </head>
 <body>
-    <div class="divmaman">
-        <div class="div1">
-           <h2>Jeu 1</h2>
-        </div>
+    <div class="navbar">
+        <h1>Navbar</h1>
+        <ul class="ulnavbar">
+            <li class="li active" data-section="home">Home</li>
+            <li class="li" data-section="jeux1">Jeux 1</li>
+            <li class="li" data-section="jeux2">Jeux 2</li>
+            <li class="li" data-section="jeux3">Jeux 3</li>
+            <li class="li" data-section="AboutUs">About Us</li>
+            <li class="li" data-section="connexion">Se connecter</li>
 
-        <div class="div2">
-            <h2> Jeu 2</h2>
-        </div>
-
-        <div class="div3">
-          <h2> Jeu 3</h2>
-        </div>
+        </ul>
+    </div>
+    <!-- Conteneur pour le contenu dynamique -->
+    <div id="content" class="content">
+        <!-- Le contenu des sections sera chargé ici -->
     </div>
     <script src="./games.js"></script>
 </body> 

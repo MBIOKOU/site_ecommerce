@@ -1,16 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
-body {
-	margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background:#15191f
+body{
+    height: 100vh;
+	background: linear-gradient(#13181d, #20212e, #341b47);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
-.divmaman{
+.navbar{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    gap: 30px;
     align-items: center;
 }
 
-.div1{
-    background-color: #331B46;
+li{
+    list-style: none;
+}
+
+li:hover{
+    cursor: pointer;
+    color: gray;
+    transition: 0.5s ease-in-out;
+}
+
+.active{
+    border-bottom: 2px solid violet;
+    padding: 0.7rem
+
 }
