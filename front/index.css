@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+body {
+	margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: linear-gradient(#15191F, #331B46);
+}
+
+header nav {
+    padding: 30px 5% 0px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h1{
+    color: #d33bfd;
+}
+
+header nav .Menu {
+    display: flex;
+}
+
+header nav .Menu p {
+	margin: 5px 10px 0 0;
+	color: #c8cacc;
+}
+
+header nav .Menu p:hover {
+	color: white;
+	cursor: pointer;
+}
+
+header nav .Menu button {
+	padding: 5px 15px;
+	font-size: 16px;
+	background-color: inherit;
+	border: 1px solid #D33BFD;
+    color: #D33BFD;
+	border-radius: 5px;
+	cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header nav .Menu button:hover {
+    background-color: #D33BFD;
+    color: white;
+}
+
+.divmaman {
+    padding: 30px 5%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.divmaman .div1 {
+	width: 100%;
+	flex-shrink: 3;
+}
+.divmaman .div1 h1{
+	margin: 0;
+	font-size: 4vw;
+	width: 80%;
+    color: white;
+}
+.divmaman .div1 p{
+	font-weight: 300;
+	color: #e9e9e9;
+}
+.divmaman .div1 button{
+	margin-top: 20px;
+	padding: 15px 20px;
+	font-size: 15px;
+	border-radius: 10px;
+	outline: none;
+	cursor: pointer;
+    background-color: #D33BFD;
+    color: white;
+    border: 1px solid #D33BFD;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.divmaman .grandeimage img {
+    width: 100%;
+}
+
+
+
+.divmaman button:hover{
+    background-color: inherit;
+    color: #D33BFD;
+}
+
+.images{
+    margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+
+.images .image{
+	padding: 20px;
+	background-color: #33314d;
+	margin: 0 15px 15px 0;
+	border-radius: 20px;
+    transition: filter 0.3s;
+}
+
+.images .image img{
+    width: 120px;
+}
+
+.deux .produit{
+    margin : 0;
+    color : #D33BFD
+}
+.deux{
+    margin: 0;
+    background-color: #13181D;
+}
+
+.deux h1{
+	margin: 0;
+	font-size: 4vw;
+	width: 80%;
+    color: white;
+}
+
+.deux p{
+    color: white;
+}
+
+.deux button{
+	margin-top: 20px;
+	padding: 15px 20px;
+	font-size: 15px;
+	border-radius: 10px;
+	outline: none;
+	cursor: pointer;
+    background-color: inherit;
+    color: #D33BFD;
+    border: 1px solid #D33BFD;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.deux button:hover{
+    background-color: #D33BFD;
+    color: white;
+}
+
+.div2{
+    width: 100%;
+    flex-shrink: 3;
+}
+
+footer {
+	margin: 0;
+	padding: 20px;
+	background-color: black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+footer h3 {
+    color : #D33BFD;
+}
+
+footer p {
+	cursor: pointer;
+	color: #ccc;
+}
+footer p:hover {
+	color: white;
+}
+
+.bar {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 25px;
+}
+
+.bar div {
+    background-color: white;
+    height: 4px;
+    width: 24px;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-3px, 3px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-7px, -7px);
+}
+
+.list-deroulante {
+    display: none;
+    flex-direction: column;
+    background-color: #15191F;
+    position: fixed;
+    top: 0;
+    left: -105%;
+    width: 100%;
+    height: 100%;
+    transition: left 0.4s;
+    padding: 60px 10px;
+    z-index: 1;
+}
+
+.list-deroulante.show {
+    left: 0;
+}
+
+
+@media screen and (max-width: 640px) {
+    .bar {
+        display: block;
+        z-index: 10;
+    }
+    .list-deroulante{
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        opacity: 0.97;
+    }
+    .list-deroulante p{
+        color: #D33BFD;
+        font-weight: 300;
+    }
+    .list-deroulante .connecter{
+        margin-top: 20px;
+        padding: 15px 20px;
+        font-size: 15px;
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+        background-color: inherit;
+        color: #D33BFD;
+        border: 1px solid #D33BFD;
+        transition: background-color 0.5s, color 0.5s;
+    }
+    .Menu {
+        display: none;
+    }
+    header nav .Menu button {
+        display: none;
+    }
+    .divmaman {
+        flex-direction: column;
+    }
+    .deux{
+        text-align: center;
+    }
+    .deux h1{
+        width: 95%;
+    }
+    nav .Menu p{
+        display: none;
+    }
+    nav .Menu .connecter{
+        display: none;
+    }
+    .div1 h1{
+        font-size: 2em;
+    }
+    .grandeimage img{
+        scale: 0.8;
+    }
+
+    footer {
+		justify-content: start;
+	}
+	footer .div3 {
+		width: 80%;
+	}
+    .divmaman .div1 h1 {
+        width: 95%;
+        text-align: center;
+        color: #D33BFD;
+        font-size: 1.3em;
+    }
+    .images .image img{
+        width: 80px;
+    }
+    .images{
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .divmaman .div1 {
+        text-align: center;
+    }
+    .no-scroll {
+        overflow: hidden;
+    }
+    
+}

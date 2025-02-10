@@ -1,0 +1,98 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #15191F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+.login-container {
+  background-color: #331B46;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  /* text-align: center; */
+  width: 300px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container1{
+  display: none;
+}
+
+.affiche{
+  display: flex;
+}
+
+.boutton{
+    background-color: transparent;
+    color: #D33BFD;
+    cursor: pointer;
+}
+
+
+.navigation{
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem
+}
+
+.login-container h1 {
+  margin-bottom: 30px;
+  color: #D33BFD;
+}
+
+form {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around;
+}
+
+form h2 {
+  margin-bottom: 10px;
+  color: #D33BFD;
+}
+
+label {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #D33BFD;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background-color: #D33BFD;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: white;
+  color: #D33BFD;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 4px;
+  display: block;
+}
+
+input.error {
+  border: 1px solid red;
+}
